@@ -5,7 +5,7 @@
         src="@/assets/cashflow-icon.svg"
         alt="Logo"
         />
-        <h1><span>Cash</span>Flow</h1>
+        <h1><span>Fabi</span>Flow</h1>
         <span></span>
     </header>
 </template>

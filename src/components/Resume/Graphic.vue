@@ -30,7 +30,7 @@
           y2="200"
         />
       </svg>
-      <p>Últimos 30 días</p>      
+      <p>*Este gráfico se basa en los movimientos de los últimos 30 días</p>      
     </div>
   </template>
   

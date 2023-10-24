@@ -1,6 +1,6 @@
 <template>
     <div class="movements">
-      <h2 class="title">Historial</h2>
+      <h2 class="title">Historial de movimientos</h2>
       <div class="content"> 
         <Movements 
           v-for="{id, title, description, amount} in movements" 
