@@ -39,7 +39,7 @@
     import Modal from "./Modal.vue";
     const showModal = ref(false);
     const title = ref("");
-    const amount = ref(0);
+    const amount = ref("");
     const description = ref("");
     const movementType = ref("Ingreso");
 
@@ -48,7 +48,7 @@
     const submit = () => {
       showModal.value = !showModal.value;
       emit("create",{
-        title: title.value,
+        title: title.value.toUpperCase(),
         description: description.value,
         amount: movementType.value === "Ingreso" ? amount.value : -amount.value,
         time: new Date(),
@@ -56,7 +56,7 @@
       });
       title.value = "";
       description.value = "";
-      amount.value = 0;
+      amount.value = "";
       movementType.value="Ingreso";
       
 
