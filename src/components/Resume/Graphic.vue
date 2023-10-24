@@ -30,7 +30,7 @@
           y2="200"
         />
       </svg>
-      <p>*Gráfico de movimientos en los últimos 30 días</p>      
+      <p>*Gráfico de los últimos 30 días</p>      
     </div>
   </template>
   

@@ -18,13 +18,13 @@
             <div class="field">
               <label>Tipo de Movimiento</label>
               <label class="radio-label">
-                <input type="radio" v-model="movementType" value="Ingreso" />
-                <span> Ingreso </span>
-              </label>    
-              <label class="radio-label">
                 <input type="radio" v-model="movementType" value="Gasto" />
                 <span> Gasto </span>
               </label>
+              <label class="radio-label">
+                <input type="radio" v-model="movementType" value="Ingreso" />
+                <span> Ingreso </span>
+              </label>    
             </div>
             <div class="action">
               <button>Agregar Movimiento</button>
