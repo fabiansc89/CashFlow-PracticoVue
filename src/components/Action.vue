@@ -17,14 +17,20 @@
             </div>
             <div class="field">
               <label>Tipo de Movimiento</label>
-              <label class="radio-label">
-                <input type="radio" v-model="movementType" value="Gasto" />
-                <span> Gasto </span>
-              </label>
-              <label class="radio-label">
-                <input type="radio" v-model="movementType" value="Ingreso" />
-                <span> Ingreso </span>
-              </label>    
+              <div class="contenedor">
+                <div> 
+                  <label class="radio-label" style>
+                    <input type="radio" v-model="movementType" value="Gasto" />
+                    <span> Gasto </span>
+                  </label>
+                </div>
+                <div> 
+                  <label class="radio-label">
+                    <input type="radio" v-model="movementType" value="Ingreso" />
+                    <span> Ingreso </span>
+                  </label>    
+                </div>
+              </div>
             </div>
             <div class="action">
               <button>Agregar Movimiento</button>
@@ -41,7 +47,7 @@
     const title = ref("");
     const amount = ref("");
     const description = ref("");
-    const movementType = ref("Ingreso");
+    const movementType = ref("Gasto");
 
     const emit = defineEmits(["create"]);
 
@@ -57,13 +63,18 @@
       title.value = "";
       description.value = "";
       amount.value = "";
-      movementType.value="Ingreso";
+      movementType.value="Gasto";
       
 
     };
 </script>
 
 <style scoped>
+.contenedor {
+  display:flex; 
+  justify-content:center;
+}
+
 button {
   color: white;
   font-size: 1.25rem;
@@ -111,6 +122,8 @@ input[type="number"] {
   display: flex;
   align-items: center;
   margin-top: 8px;
+  padding: 10px;
+  margin: 0 5px;
 }
 
 .radio-label span {
