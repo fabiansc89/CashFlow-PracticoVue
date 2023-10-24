@@ -5,7 +5,7 @@
     </template>
     <template #resume>
       <Resume
-        :total-label="'Saldo total'"
+        :total-label="'Saldo Total'"
         :label="label"
         :total-amount="totalAmount"
         :amount="amount"
